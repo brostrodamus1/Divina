@@ -20,7 +20,7 @@ jobs:
       branch-id: ${{ fromJson(steps.project.outputs.info).branch-id }}
     steps:
       - name: Fetch project data
-        uses: ionos-deploy-now/project-action@v1
+        uses: ionos-deploy-now/project-action@main
         id: project
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
